@@ -13,10 +13,7 @@
 # run coverage tests with python -m pytest --cov
 
 import pytest
-from datetime import date
 from app import app, Loan
-import io
-import sys
 
 
 
