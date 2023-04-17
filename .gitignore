@@ -1,4 +1,4 @@
-# application log files
+# application log files #
 *.log
 
 # hidden Mac file of cached metadata when Finder is used to browse folders
