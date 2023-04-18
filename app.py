@@ -1,8 +1,16 @@
 from flask import Flask
 from flask import render_template, request, redirect, url_for
 
+
 app = Flask(__name__)
 
+# error handling for 404 page
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 class Loan:
     def __init__(self, loanAmount, numberYears, annualRate):
